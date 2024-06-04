@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+}
+.header {
+    display: flex;
+    justify-content: space-around;
+}
+.logo {
+    width: 100px;
+}
+.nav {
+    text-decoration: none;
+    color: #d79a00;
+    font-size: 22px;
+    margin-top: 20px;
+    font-family: 'Source Code Pro', monospace;
+}
+.heading {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+h1,h2 {
+    font-family: 'Source Code Pro', monospace;
+    color: #ffffff;
+}
+p {
+    font-family: 'Source Code Pro', monospace;
+    color: #ffffff;
+    margin-top: 20px; 
+}
+.sheep-img {
+    width: 500px;
+    border-radius: 40px;
+}
+button {
+    background-color: rgba(180, 181, 1);
+    font-family: 'Source Code Pro', monospace;
+    font-size: 15px;
+    color: #ffffff;
+    border-radius: 30px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.wrapper-one {
+    background-image: linear-gradient(#0c1d4c, #231a53, #6c7eda)
+}
+.wrapper-two {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.wrapper-three {
+    background-image: linear-gradient(#6c7eda, #536187, #b0add4);
+}
+.item {
+    color: #000000;
+    font-size: 22px;
+    font-family: 'Source Code Pro', monospace;
+}
+.self-care {
+    color: rgb(239, 181, 210);
+}
+.about-us {
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+    font-size: 18px;
+}
+.container-moon {
+    position: relative;
+}
+.moon-button {
+    position: absolute;
+    left: 600px;
+    bottom: 100px;
+}
+.style-footer {
+    color: black;
+    font-size: 12px;
+}
+.stars img {
+    width: 50px;
+    animation: star 7s linear infinite;
+    opacity: 0.2;
+}
+.stars {
+    display: flex;
+    justify-content: space-around;
+}
+@keyframes star {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+.stars img:nth-child(1) {
+    animation-delay: 1s;
+    width: 20px;
+}
+.stars img:nth-child(2) {
+    animation-delay: 2s;
+    width: 15px;
+}
+.stars img:nth-child(3) {
+    animation-delay: 1.5s;
+    width: 10px;
+}
+.stars img:nth-child(4) {
+    animation-delay: 2s;
+    width: 15px;
+}
+.stars img:nth-child(5) {
+    animation-delay: 1s;
+    width: 20px;
+}
+.stars img:nth-child(6) {
+    animation-delay: 2.5s;
+    width: 25px;
+}
+.stars img:nth-child(7) {
+    animation-delay: 3s;
+    width: 20px;
+}
+
+@media all and (max-width: 800px) {
+    .header, .wrapper-two {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sheep-img, .self-care-img {
+        width: 50%;
+    }
+    .moon-button {
+        left: 325px;
+        bottom: 30px
+    }
+}
+
+@media all and (max-width: 500px) {
+    .moon-button {
+        left: 125px;
+        bottom: 0;
+        padding: 5px;
+    }
+    .sheep-img, .self-care-img {
+        width: 90%;
+    }
+    .about-us, p {
+        font-size: 15px;
+        padding: 10px;
+    }
+    h1, h2 {
+        font-size: 20px;
+        padding: 10px;
+    }
+}
